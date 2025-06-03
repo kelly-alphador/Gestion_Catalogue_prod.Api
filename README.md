@@ -40,3 +40,17 @@ API REST développée en **ASP.NET Core** pour la gestion d’un catalogue de pr
 - `Gestion_Catalogue_prod.Api/` : Projet principal de l'API
 - `Gestion_catalogue_prod.Domaine.Core/` : Contient les entités du domaine (`Categorie`, `Produit`)
 - `Gestion_catalogue_prod.Infrastructure.Core/` : Contient le contexte de base de données et les configurations
+  ## 🚀 Lancer le projet
+
+1. Cloner le dépôt :
+
+   ```bash
+   git clone https://github.com/kelly-alphador/Gestion_Catalogue_prod.Api.git
+   ```bash
+   cd Gestion_Catalogue_prod.Api
+   ```bash
+   dotnet restore
+   ```bash
+   dotnet ef database update
+   ```bash
+   dotnet run
