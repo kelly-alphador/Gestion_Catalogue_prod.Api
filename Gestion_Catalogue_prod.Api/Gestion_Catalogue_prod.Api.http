@@ -1,0 +1,6 @@
+@Gestion_Catalogue_prod.Api_HostAddress = http://localhost:5288
+
+GET {{Gestion_Catalogue_prod.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
