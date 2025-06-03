@@ -46,11 +46,13 @@ API REST développée en **ASP.NET Core** pour la gestion d’un catalogue de pr
 
    ```bash
    git clone https://github.com/kelly-alphador/Gestion_Catalogue_prod.Api.git
-   ```bash
    cd Gestion_Catalogue_prod.Api
+2. Restaurer les dépendances :
    ```bash
    dotnet restore
+3. Appliquer les migrations et créer la base de données : 
    ```bash
    dotnet ef database update
+4. Démarrer l'application :
    ```bash
    dotnet run
