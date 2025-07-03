@@ -93,7 +93,7 @@ namespace Gestion_catalogue_prod.Infrastructure.Core.Repository
             return _dbContext.Produit.GroupBy(p => p.Categorie.Nom).Select(p => new Quantite_prodBycategorie
             {
                 Nom_categorie = p.Key,
-                Qantire_Total = p.Sum(p => p.Quantite)
+                Qantite_Total = p.Sum(p => p.Quantite)
             }).ToList();
         }
         public async Task<ApiResponse> AddAsync(Produit produit)
