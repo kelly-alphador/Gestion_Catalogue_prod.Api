@@ -40,6 +40,14 @@ API REST développée en **ASP.NET Core** pour la gestion d’un catalogue de pr
 - `Gestion_Catalogue_prod.Api/` : Projet principal de l'API
 - `Gestion_catalogue_prod.Domaine.Core/` : Contient les entités du domaine (`Categorie`, `Produit`)
 - `Gestion_catalogue_prod.Infrastructure.Core/` : Contient le contexte de base de données et les configurations
+  ## 💡 Captures de la documentation Swagger
+  ### les endpoints Category
+  ![Endpoints](./Gestion_Catalogue_prod.Api/Docs/endpoints_category.png)
+  ### les endpoints produit
+  ![Endpoints](./Gestion_Catalogue_prod.Api/Docs/endpoints_produit.png)
+  ### Quantite total produit par nom category
+  ![Totalprod](./Gestion_Catalogue_prod.Api/Docs/group.png)
+  
   ## 🚀 Lancer le projet
 
 1. Cloner le dépôt :
@@ -52,7 +60,7 @@ API REST développée en **ASP.NET Core** pour la gestion d’un catalogue de pr
    dotnet restore
 3. Appliquer les migrations et créer la base de données : 
    ```bash
-   dotnet ef database update
+   dotnet ef database update -p Gestion_catalogue_prod.Infrastructure.Core -s Gestion_Catalogue_prod.Api
 4. Démarrer l'application :
    ```bash
    dotnet run
